@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Alura - Home</title>
+</head>
+
+<body>
+    <header class="header container">
+        <img src="/assets/img/icons/logo.png" alt="Logo Barbearia Alura" class="header__logo">
+        <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+        <label class="close-menu-label" for="close-menu" title="close menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <aside class="menu white-bg">
+            <div class="main-content menu-content">
+                <h1 onclick="getElementById('close-menu').checked = false;">
+                    <a href="#">Logo</a>
+                </h1>
+
+                <nav>
+                    <ul onclick="getElementById('close-menu').checked = false;">
+                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="#">Nosso Estabelecimento</a></li>
+                        <li><a href="#">Beneficios</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+    </header>
+    <main>
+        <section class="intro container">
+            <h1 class="intro__title">Barbearia Alura</h1>
+            <p class="intro__text">Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o
+                mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque
+                na cidade e conquista novos clientes a cada dia.</p>
+            <a href="#" class="intro__button">Saiba mais</a>
+        </section>
+        <section class="about-us container">
+            <h2 class="about-us__title">Sobre a Barbearia Alura</h2>
+            <img src="./assets/img/icons/utensilios.jpg" alt="Utensilios de um barbeiro" class="about-us__img">
+            <p class="about-us__text">Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o
+                mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque
+                na cidade e conquista novos clientes a cada dia.</p>
+            <p class="about-us__text"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos
+                        clientes"</strong></em>.</p>
+            <p class="about-us__text">Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O
+                atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos
+                clientes.</p>
+        </section>
+        <section class="our-establishment container">
+            <h3 class="our-establishment__title">Nosso estabelecimento</h3>
+            <p class="our-establishment__text">Nosso estabelecimento está localizado no coração da cidade</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117027.4097983533!2d-46.7917924835937!3d-23.5646162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59541c6c79c3%3A0x36b90a85f0f8cb33!2sGrupo%20Alura!5e0!3m2!1spt-BR!2sbr!4v1675094755868!5m2!1spt-BR!2sbr"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section class="benefits container">
+            <h4 class="benefits__title">Benefícios</h4>
+            <ul class="benefits__list">
+                <li>Atendimento aos Clientes</li>
+                <li>Espaço diferenciado</li>
+                <li>Localização</li>
+                <li>Profissionais Qualificados</li>
+                <li>Pontualidade</li>
+                <li>Limpeza</li>
+            </ul>
+            <img src="./assets/img/index/beneficios.jpg" alt="Uma pessoa fazendo a barba" class="benefits__img">
+            <div class="benefits__video"><iframe width="838" height="893"
+                    src="https://www.youtube.com/embed/wcVVXUV0YUY"
+                    title="Scissor Cut Short Back and Sides Men's Haircut" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe></div>
+        </section>
+    </main>
+    <footer class="footer container">
+        <img src="./assets/img/icons/logo-branco.png" alt="Logo Barbearia Alura" class="footer__logo">
+        <p class="footer_text">© Copyright Barbearia Alura - 2023</p>
+        </img>
+    </footer>
+    <a href="#home" class="back-to-top">➤</a>
+</body>
+
+</html>
