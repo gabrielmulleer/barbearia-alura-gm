@@ -1,3 +1,16 @@
 .container {
     padding: 0 6%;
 }
+
+.pd-t-b {
+    padding-top: 1.8125rem;
+    padding-bottom: 1.8125rem;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
