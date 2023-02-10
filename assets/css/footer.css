@@ -1,0 +1,22 @@
+.footer {
+    background: url(/assets/img/icons/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__logo {
+    width: 15%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.footer__text {
+    font-size: 1rem;
+    color: white;
+}
