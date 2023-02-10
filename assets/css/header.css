@@ -1,0 +1,105 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #000000;
+}
+
+/* IMAGE */
+.header__logo {
+    width: 20%;
+}
+
+/* BURGER MENU */
+.close-menu {
+    position: absolute;
+    opacity: 0;
+}
+
+.close-menu-label {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 22px;
+    width: 30px;
+}
+
+.close-menu-label span {
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background: #f16234;
+    transition: 0.25s ease-in-out;
+}
+
+.close-menu-label span:nth-child(1) {
+    top: 0;
+}
+
+.close-menu-label span:nth-child(2) {
+    top: 8px;
+}
+
+.close-menu-label span:nth-child(3) {
+    top: 16px;
+}
+
+.close-menu:checked+.close-menu-label span:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 8px;
+}
+
+.close-menu:checked+.close-menu-label span:nth-child(2) {
+    opacity: 0;
+}
+
+.close-menu:checked+.close-menu-label span:nth-child(3) {
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+/* MENU MOBILE */
+.menu {
+    bottom: 0;
+    text-align: center;
+}
+
+.menu-content {
+    display: flex;
+    height: 100vh;
+}
+
+.menu-content,
+.menu-content ul {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu {
+    display: none;
+}
+
+.close-menu-label::after {
+    position: fixed;
+    z-index: 2;
+    top: 2rem;
+    right: 2rem;
+    font-size: 3rem;
+    line-height: 3rem;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+/* × */
+.close-menu:checked~.menu {
+    display: block;
+}
+
+.close-menu:checked~.close-menu-label::after {
+    display: block;
+}
