@@ -1,0 +1,21 @@
+.about-us div {
+    margin-top: 2.375rem;
+
+}
+
+.about-us__title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.about-us__img {
+    width: 40%;
+    border-radius: 10px;
+    float: left;
+    margin: 0 .9375rem .9375rem 0;
+}
+
+.about-us__text {
+    margin-bottom: 1em;
+}

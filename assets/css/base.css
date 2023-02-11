@@ -1,0 +1,39 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    padding: 0 6%;
+}
+
+.pd-t-b {
+    padding-top: 1.8125rem;
+    padding-bottom: 1.8125rem;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+.back-to-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    background: #fefefe;
+    border: 1px solid black;
+    color: black;
+    right: 1rem;
+    bottom: 1rem;
+    transform: rotate(-90deg);
+    border-radius: 50%;
+
+    width: 2rem;
+    height: 2rem;
+
+}
