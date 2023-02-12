@@ -1,0 +1,56 @@
+.container__title {
+    font-weight: 700;
+    font-size: 56px;
+    margin-bottom: 2.5rem;
+}
+
+.products,
+.products__cards,
+.card,
+.card__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.products {
+    text-align: center;
+}
+
+.products__cards {
+    gap: 40px;
+}
+
+.card {
+    align-items: center;
+    padding: 10px 0;
+    height: 430px;
+    border-radius: 20px;
+    border: 1px solid #000000;
+}
+
+.card__content {
+    align-items: center;
+    height: 100%;
+}
+
+.card__title {
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.card__img {
+    height: 250px;
+    width: 250px;
+}
+
+.card__text {
+    font-size: 16px;
+    padding: 0 71px;
+    margin-top: auto;
+}
+
+.card__price {
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: auto;
+}
