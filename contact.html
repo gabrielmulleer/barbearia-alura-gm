@@ -6,10 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato | Barbearia Alura</title>
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/contact.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
 </head>
 
 <body>
-    <header class="header container">
+    <header id="header" class="header container">
         <img src="/assets/img/icons/logo.png" alt="Logo Barbearia Alura" class="header__logo">
         <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
         <label class="close-menu-label" for="close-menu" title="close menu">
@@ -34,25 +40,29 @@
         </aside>
     </header>
     <main>
-        <section class="contact container">
+        <section class="contact container pd-t-b">
+            <h1 class="contact__title">Contato</h1>
             <form action="">
-                <label for="name">Nome</label>
-                <input type="text" name="name" id="">
+                <label for="name" class="contact__form-title">Nome</label>
+                <input type="text" name="name" id="" placeholder="Digite seu nome e sobrenome"
+                    class="contact__form-input" required>
 
-                <label for="">Email</label>
-                <input type="email" name="" id="">
+                <label for="" class="contact__form-title">Email</label>
+                <input type="email" name="" id="" placeholder="seuemail@dominio.com" class="contact__form-input"
+                    required>
 
-                <label for="">Telefone</label>
-                <input type="tel" name="" id="">
+                <label for="" class="contact__form-title">Telefone</label>
+                <input type="tel" name="" id="" placeholder="(XX) XXXXX-XXXX" class="contact__form-input" required>
 
-                <label for="">Mensagem</label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <label for="" class="contact__form-title">Mensagem</label>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Digite uma mensagem"
+                    class="contact__form-textarea"></textarea>
 
                 <fieldset class="contact__content-radio">
                     <legend>Como prefere o nosso contato?</legend>
-                    <label for=""><input type="radio" name="" id="">Email</label>
-                    <label for=""><input type="radio" name="" id="">Telefone</label>
-                    <label for=""><input type="radio" name="" id="">Whatsapp</label>
+                    <label for=""><input type="radio" name="contact" id="" checked>Email</label>
+                    <label for=""><input type="radio" name="contact" id="">Telefone</label>
+                    <label for=""><input type="radio" name="contact" id="">Whatsapp</label>
                 </fieldset>
                 <fieldset class="contact__content-dropdown">
                     <legend>Qual horário prefere ser atendido</legend>
@@ -62,9 +72,10 @@
                         <option value="">Noite</option>
                     </select>
                 </fieldset>
-                <label for=""><input type="checkbox" name="" id="">Receber novidades por
+                <label for="" class="contact__form-news contact__form-title"><input type="checkbox" name="" id=""
+                        checked>Receber novidades por
                     email</label>
-                <input type="submit" value="Enviar formulário">
+                <input type="submit" value="Enviar formulário" class="contact__button">
             </form>
 
             <table class="contact__table">
@@ -88,18 +99,15 @@
                         <td>8h ~ 20h</td>
                     </tr>
                 </tbody>
-                <tfoot>
-                    <td colspan="2"></td>
-                </tfoot>
             </table>
         </section>
     </main>
     <footer class="footer container">
         <img src="./assets/img/icons/logo-branco.png" alt="Logo Barbearia Alura" class="footer__logo">
-        <p class="footer_text">© Copyright Barbearia Alura - 2023</p>
+        <p class="footer__text">© Copyright Barbearia Alura - 2023</p>
         </img>
     </footer>
-    <a href="#" class="back-to-top">➤</a>
+    <a href="#header" class="back-to-top">➤</a>
 </body>
 
 </html>

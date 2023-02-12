@@ -1,0 +1,127 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 56px;
+}
+
+.contact form,
+fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.contact__form-title {
+    margin-top: 20px;
+}
+
+.contact form label,
+fieldset legend {
+    line-height: 140%;
+    letter-spacing: 0.01em;
+}
+
+.contact__form-input,
+.contact__form-textarea {
+    background: #F8FAFC;
+    border-radius: 4px;
+    align-self: stretch;
+    padding: 12px;
+    flex-grow: 0;
+    border: none;
+}
+
+.contact form input::placeholder,
+textarea::placeholder {
+    font-size: 16px;
+    color: #B8BCCA;
+}
+
+.contact__content-radio,
+.contact__content-dropdown {
+    margin-top: 20px;
+    align-self: stretch;
+}
+
+.contact__content-radio label {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    gap: .5rem;
+}
+
+.contact__content-radio input {
+    width: 20px;
+    height: 20px;
+}
+
+.contact__content-dropdown select {
+    align-self: stretch;
+    background: #F8FAFC;
+    border-radius: 4px;
+    height: 48px;
+
+    font-size: 16px;
+    color: #B8BCCA;
+    padding: 12px;
+    border: none;
+}
+
+.contact__form-news {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    gap: .5rem;
+}
+
+.contact__form-news input {
+    width: 18px;
+    height: 18px;
+}
+
+.contact__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+
+    margin-top: 20px;
+    background: #0048D9;
+
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+
+    color: white;
+    font-size: 16px;
+}
+
+.contact__table {
+    margin-top: 20px;
+    border-radius: 4px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start; */
+
+
+    /* border: 1px solid #B9B9B9; */
+}
+
+.contact__table thead {
+    background: rgba(0, 0, 0, 0.06);
+    font-weight: bold;
+}
+
+.contact__table th,
+td {
+    padding: 10px 12px;
+    border: 1px solid #B9B9B9;
+
+    font-size: 16px;
+}
