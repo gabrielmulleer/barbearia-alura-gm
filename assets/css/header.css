@@ -10,6 +10,10 @@
     width: 20%;
 }
 
+.header__logo-white {
+    display: none;
+}
+
 /* BURGER MENU */
 .close-menu {
     position: absolute;
@@ -102,4 +106,35 @@
 
 .close-menu:checked~.close-menu-label::after {
     display: block;
+}
+
+@media screen and (min-width: 768px) {
+    .header__logo {
+        width: 10%;
+    }
+
+    .close-menu,
+    .close-menu-label,
+    .menu-content h1 {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .menu-content {
+        height: auto;
+    }
+
+    .main-content ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 448px;
+    }
+
+    .main-content ul li a {
+        font-size: 2rem;
+    }
 }
