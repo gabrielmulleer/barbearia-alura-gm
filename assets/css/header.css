@@ -152,7 +152,7 @@
 
     .header__logo-white {
         display: block;
-        width: 10%;
+        width: 5%;
     }
 
     .menu {
@@ -173,7 +173,7 @@
         position: absolute;
         width: 100%;
         transform: scaleX(0);
-        bottom: 0;
+        bottom: -1rem;
         left: 0;
         height: 0.2rem;
         background: white;

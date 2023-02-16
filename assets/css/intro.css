@@ -42,3 +42,31 @@
         width: 22rem;
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .intro {
+        background: url(/assets/img/index/Muller_80s_Barber_shop_classical_music_hot_towels_leather_chair_ac253a6c-60f3-407e-b24c-9c852328e3c2.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .intro__title,
+    .intro__text {
+        color: white;
+    }
+
+    .intro__title {
+        font-size: 7rem;
+    }
+
+    .intro__text {
+        padding: 0 149px;
+        line-height: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .intro__button {
+        width: 28rem;
+    }
+}
