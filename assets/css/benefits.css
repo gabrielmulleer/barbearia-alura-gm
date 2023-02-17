@@ -11,7 +11,7 @@
     margin-bottom: 2.375rem;
 }
 
-.benefits div {
+.benefits__box {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -45,9 +45,23 @@
 }
 
 @media screen and (min-width: 768px) {
-    .benefits div {}
-
     .benefits__img {
         width: 43%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .benefits__img {
+        width: 45%;
+    }
+
+    .benefits__list {
+        font-size: 1rem;
+    }
+
+    .benefits__video {
+        width: 50vw;
+        height: 50vh;
     }
 }
