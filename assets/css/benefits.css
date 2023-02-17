@@ -12,6 +12,7 @@
 }
 
 .benefits div {
+    width: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 1.625rem;
@@ -25,7 +26,7 @@
 .benefits__list {
     display: inline-block;
     list-style: circle;
-    width: 100px;
+    width: 30%;
 }
 
 .benefits__list li:first-child {
@@ -41,4 +42,12 @@
 .benefits__video {
     width: 100vw;
     height: 30vh;
+}
+
+@media screen and (min-width: 768px) {
+    .benefits div {}
+
+    .benefits__img {
+        width: 43%;
+    }
 }
