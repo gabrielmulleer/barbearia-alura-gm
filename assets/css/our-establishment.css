@@ -17,3 +17,9 @@
         padding: 0 10.8%;
     }
 }
+
+@media screen and (min-width: 1024px) {
+    iframe {
+        height: 50vh;
+    }
+}

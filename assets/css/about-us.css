@@ -29,6 +29,10 @@
         padding: 0 16.26%;
     }
 
+    .about-us__box {
+        margin-bottom: 4rem;
+    }
+
     .about-us__img {
         width: 20%;
     }
@@ -38,6 +42,10 @@
 @media screen and (min-width: 1024px) {
     .about-us {
         padding: 0 20.5%;
+    }
+
+    .about-us__box {
+        margin-bottom: 10rem;
     }
 
     .about-us__title {
