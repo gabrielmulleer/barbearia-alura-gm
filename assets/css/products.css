@@ -1,3 +1,8 @@
+.intro {
+    text-align: center;
+
+}
+
 .container__title {
     font-weight: 700;
     font-size: 56px;
@@ -20,17 +25,17 @@
 .products__cards {
     gap: 40px;
     align-items: stretch;
+
 }
 
 .card {
 
     padding: 10px 0;
     /* width: 21rem; */
-    max-width: 27rem;
+    max-width: 25rem;
     height: 27rem;
     border-radius: 20px;
     border: 1px solid #000000;
-    align-content: stretch;
 }
 
 .card__content {
@@ -46,6 +51,7 @@
 .card__img {
     height: 15.625rem;
     width: 15.625rem;
+
 }
 
 .card__text {
@@ -66,8 +72,58 @@
     }
 
     .card__price {
-
         font-size: 1.5rem;
 
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .intro {
+        background: url(/assets/img/index/Muller_80s_Barber_shop_classical_music_hot_towels_leather_chair_ac253a6c-60f3-407e-b24c-9c852328e3c2.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container__title {
+        font-size: 7rem;
+        color: white;
+    }
+
+    .products,
+    .products__cards {
+        flex-direction: row;
+    }
+
+    .products__cards {
+        width: 100%;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 1rem;
+
+    }
+
+    .card {
+        width: 19rem;
+        background: white;
+        transition: transform .2s ease-in-out, box-shadow .3s ease-in-out;
+    }
+
+    .card:hover {
+        transform: scale(1.2);
+        box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.37);
+    }
+
+    .card:nth-child(1) {
+        order: -1;
+    }
+
+    .card:nth-child(2) {
+        order: 1;
+    }
+
+    .card:nth-child(3) {
+        order: 0;
+        height: 29rem;
     }
 }
