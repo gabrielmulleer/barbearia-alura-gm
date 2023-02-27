@@ -180,6 +180,7 @@
         background: white;
         transform-origin: bottom right;
         transition: transform .25s ease-in-out;
+        border-radius: 30px;
     }
 
     .main-content ul li a:hover::after {
