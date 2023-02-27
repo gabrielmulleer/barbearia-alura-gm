@@ -14,18 +14,23 @@
 
 .products {
     text-align: center;
+    align-items: center;
 }
 
 .products__cards {
     gap: 40px;
+    align-items: stretch;
 }
 
 .card {
-    align-items: center;
+
     padding: 10px 0;
-    height: 430px;
+    /* width: 21rem; */
+    max-width: 27rem;
+    height: 27rem;
     border-radius: 20px;
     border: 1px solid #000000;
+    align-content: stretch;
 }
 
 .card__content {
@@ -39,8 +44,8 @@
 }
 
 .card__img {
-    height: 250px;
-    width: 250px;
+    height: 15.625rem;
+    width: 15.625rem;
 }
 
 .card__text {
@@ -53,4 +58,16 @@
     font-weight: 500;
     font-size: 20px;
     margin-top: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .card__text {
+        font-size: 1.25rem;
+    }
+
+    .card__price {
+
+        font-size: 1.5rem;
+
+    }
 }
