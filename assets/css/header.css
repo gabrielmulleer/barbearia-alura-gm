@@ -10,6 +10,10 @@
     width: 20%;
 }
 
+.header__logo-white {
+    display: none;
+}
+
 /* BURGER MENU */
 .close-menu {
     position: absolute;
@@ -102,4 +106,84 @@
 
 .close-menu:checked~.close-menu-label::after {
     display: block;
+}
+
+@media screen and (min-width: 768px) {
+    .header__logo {
+        width: 10%;
+    }
+
+    .close-menu,
+    .close-menu-label,
+    .menu-content h1 {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .menu-content {
+        height: auto;
+    }
+
+    .main-content ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 448px;
+    }
+
+    .main-content ul li a {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header {
+        border-bottom: none;
+        position: absolute;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    .header__logo {
+        display: none;
+    }
+
+    .header__logo-white {
+        display: block;
+        width: 5%;
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .main-content ul li a {
+        display: inline-block;
+        position: relative;
+        color: white;
+    }
+
+    .main-content ul li a::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        bottom: -.5rem;
+        left: 0;
+        height: 0.2rem;
+        background: white;
+        transform-origin: bottom right;
+        transition: transform .25s ease-in-out;
+    }
+
+    .main-content ul li a:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom right;
+    }
 }

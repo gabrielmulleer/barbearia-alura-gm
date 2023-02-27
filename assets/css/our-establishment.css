@@ -11,3 +11,15 @@
     text-align: center;
     margin-bottom: .9375rem;
 }
+
+@media screen and (min-width: 768px) {
+    .our-establishment {
+        padding: 0 10.8%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    iframe {
+        height: 50vh;
+    }
+}

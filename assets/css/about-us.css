@@ -11,6 +11,7 @@
 
 .about-us__img {
     width: 40%;
+    max-width: 132px;
     border-radius: 10px;
     float: left;
     margin: 0 .9375rem .9375rem 0;
@@ -18,4 +19,39 @@
 
 .about-us__text {
     margin-bottom: 1em;
+}
+
+@media screen and (min-width: 768px) {
+    .about-us {
+        padding: 0 calc(6% + 4.8%);
+    }
+
+    .about-us__title {
+        padding: 0 16.26%;
+    }
+
+    .about-us__box {
+        margin-bottom: 4rem;
+    }
+
+    .about-us__img {
+        width: 20%;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .about-us {
+        padding: 0 20.5%;
+    }
+
+    .about-us__box {
+        margin-bottom: 10rem;
+    }
+
+    .about-us__title {
+        margin-top: 2rem;
+
+    }
+
 }
