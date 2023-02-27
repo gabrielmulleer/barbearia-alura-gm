@@ -6,12 +6,13 @@
 
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 1rem;
 }
 
 .footer__logo {
-    width: 15%;
+    width: 55px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
