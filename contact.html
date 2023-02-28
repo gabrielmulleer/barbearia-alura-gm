@@ -16,28 +16,23 @@
 
 <body>
     <header id="header" class="header container">
-        <img src="/assets/img/icons/logo.png" alt="Logo Barbearia Alura" class="header__logo">
         <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
-        <label class="close-menu-label" for="close-menu" title="close menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-        <aside class="menu white-bg">
+        <div class="menu__container">
+            <img src="/assets/img/icons/logo.png" alt="Logo Barbearia Alura" class="header__logo">
+            <label class="close-menu-label" for="close-menu" title="close menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <nav class="menu white-bg">
             <img src="/assets/img/icons/logo-branco.png" alt="Logo Barbearia Alura" class="header__logo-white">
-            <div class="main-content menu-content">
-                <h1 onclick="getElementById('close-menu').checked = false;">
-                    <a href="#">Logo</a>
-                </h1>
-                <nav>
-                    <ul onclick="getElementById('close-menu').checked = false;">
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./products.html">Produtos</a></li>
-                        <li><a href="./contact.html">Contato</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </aside>
+            <ul onclick="getElementById('close-menu').checked = false;" class="main-content menu-content">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./products.html">Produtos</a></li>
+                <li><a href="./contact.html">Contato</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section class="intro container pd-t-b">
