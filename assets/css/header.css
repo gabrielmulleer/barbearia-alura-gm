@@ -1,16 +1,25 @@
 .header {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06);
+    border-radius: 0px 0px 12px 12px;
+}
+
+.menu__container {
+    width: 100%;
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #000000;
 }
 
 /* IMAGE */
 .header__logo {
-    width: 20%;
+    width: 3rem;
 }
 
 .header__logo-white {
+    width: 3rem;
     display: none;
 }
 
@@ -18,6 +27,7 @@
 .close-menu {
     position: absolute;
     opacity: 0;
+    display: none;
 }
 
 .close-menu-label {
@@ -31,11 +41,11 @@
 .close-menu-label span {
     position: absolute;
     display: block;
-    height: 5px;
+    height: 3px;
     width: 100%;
     border-radius: 30px;
-    background: #f16234;
-    transition: 0.25s ease-in-out;
+    background: black;
+    transition: 0.5s ease-in-out;
 }
 
 .close-menu-label span:nth-child(1) {
@@ -50,68 +60,59 @@
     top: 16px;
 }
 
-.close-menu:checked+.close-menu-label span:nth-child(1) {
-    transform: rotate(-45deg);
+.close-menu:checked+.menu__container .close-menu-label span:nth-child(1) {
+    transform: rotate(-225deg);
     top: 8px;
 }
 
-.close-menu:checked+.close-menu-label span:nth-child(2) {
+.close-menu:checked+.menu__container .close-menu-label span:nth-child(2) {
+    width: 0;
     opacity: 0;
 }
 
-.close-menu:checked+.close-menu-label span:nth-child(3) {
-    transform: rotate(45deg);
+.close-menu:checked+.menu__container .close-menu-label span:nth-child(3) {
+    transform: rotate(225deg);
     top: 8px;
 }
 
 /* MENU MOBILE */
+
 .menu {
-    bottom: 0;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    opacity: 0;
+    transition: all .4s ease-in-out;
     text-align: center;
+
 }
 
 .menu-content {
-    display: flex;
-    height: 100vh;
-}
 
-.menu-content,
-.menu-content ul {
+    display: flex;
     flex-direction: column;
     justify-content: center;
-}
+    gap: 1rem;
 
-.menu {
-    display: none;
-}
-
-.close-menu-label::after {
-    position: fixed;
-    z-index: 2;
-    top: 2rem;
-    right: 2rem;
-    font-size: 3rem;
-    line-height: 3rem;
-    width: 3rem;
-    height: 3rem;
-    text-align: center;
-    padding: 0.5rem;
-    cursor: pointer;
+    font-size: 2rem;
 }
 
 /* × */
 .close-menu:checked~.menu {
-    display: block;
-}
 
-.close-menu:checked~.close-menu-label::after {
-    display: block;
+    margin-top: 1rem;
+    height: 25vh;
+    visibility: visible;
+    opacity: 1;
 }
 
 @media screen and (min-width: 768px) {
-    .header__logo {
-        width: 10%;
+    .close-menu:checked~.menu {
+        height: 15vh;
     }
+}
+
+@media screen and (min-width: 1024px) {
 
     .close-menu,
     .close-menu-label,
@@ -119,27 +120,6 @@
         display: none;
     }
 
-    .menu {
-        display: block;
-    }
-
-    .menu-content {
-        height: auto;
-    }
-
-    .main-content ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 448px;
-    }
-
-    .main-content ul li a {
-        font-size: 2rem;
-    }
-}
-
-@media screen and (min-width: 1024px) {
     .header {
         border-bottom: none;
         position: absolute;
@@ -153,23 +133,34 @@
 
     .header__logo-white {
         display: block;
-        width: 5%;
     }
 
     .menu {
+        height: auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 100%;
+        visibility: visible;
+        opacity: 1;
     }
 
-    .main-content ul li a {
+    .main-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 448px;
+    }
+
+    .main-content li a {
         display: inline-block;
         position: relative;
         color: white;
+        font-size: 2rem;
+
     }
 
-    .main-content ul li a::after {
+    .main-content li a::after {
         content: '';
         position: absolute;
         width: 100%;
@@ -183,7 +174,7 @@
         border-radius: 30px;
     }
 
-    .main-content ul li a:hover::after {
+    .main-content li a:hover::after {
         transform: scaleX(1);
         transform-origin: bottom right;
     }
