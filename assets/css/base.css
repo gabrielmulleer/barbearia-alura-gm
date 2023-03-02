@@ -3,8 +3,12 @@
 :root {
     --azul20: #CCCDCF;
     --azul40: #9A9B9F;
+    --azul70: #4E5157;
     --azul80: #35383F;
     --azul90: #1C1F27;
+    --botao100: #0048D9;
+    --botao90: #1A5BDD;
+    --botao80: #336DE1;
 }
 
 html {
