@@ -1,12 +1,14 @@
 .intro {
     text-align: center;
+    padding-top: 6.125rem;
 
 }
 
 .container__title {
-    font-weight: 700;
+    font-weight: 500;
     font-size: 56px;
-    margin-bottom: 2.5rem;
+    color: var(--azul20);
+
 }
 
 .products,
@@ -35,7 +37,8 @@
     max-width: 25rem;
     height: 27rem;
     border-radius: 20px;
-    border: 1px solid #000000;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
 }
 
 .card__content {
@@ -46,6 +49,7 @@
 .card__title {
     font-weight: 500;
     font-size: 32px;
+    color: var(--azul90);
 }
 
 .card__img {
@@ -58,12 +62,14 @@
     font-size: 16px;
     padding: 0 71px;
     margin-top: auto;
+    color: var(--azul90);
 }
 
 .card__price {
     font-weight: 500;
     font-size: 20px;
     margin-top: auto;
+    color: var(--azul90);
 }
 
 @media screen and (min-width: 768px) {
@@ -105,7 +111,7 @@
 
     .card {
         width: 19rem;
-        background: white;
+
         transition: transform .2s ease-in-out, box-shadow .3s ease-in-out;
     }
 

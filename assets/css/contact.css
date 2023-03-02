@@ -1,11 +1,17 @@
+.intro {
+    padding-top: 6.125rem;
+    color: var(--azul20);
+}
+
 .contact {
+    color: var(--azul20);
     display: flex;
     flex-direction: column;
 }
 
 .contact__title {
     text-align: center;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 56px;
 }
 
@@ -92,14 +98,26 @@ textarea::placeholder {
     align-self: stretch;
 
     margin-top: 20px;
-    background: #0048D9;
+    background: var(--botao100);
 
     padding: 12px;
     border-radius: 6px;
     border: none;
 
+
     color: white;
     font-size: 16px;
+    font-weight: 700;
+}
+
+.contact__button:hover {
+    background: var(--botao90);
+
+}
+
+.contact__button:active {
+    background: var(--botao80);
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .contact__table {
@@ -113,17 +131,23 @@ textarea::placeholder {
 
 .contact__table table {
     width: 21rem;
+    color: var(--azul90);
 }
 
 .contact__table thead {
-    background: rgba(0, 0, 0, 0.06);
+    background: var(--azul20);
+    font-weight: bold;
+}
+
+.contact__table tbody {
+    background: #f6f6f6;
     font-weight: bold;
 }
 
 .contact__table th,
 td {
     padding: 10px 12px;
-    border: 1px solid #B9B9B9;
+    border: 1px solid var(--azul90);
 
     font-size: 16px;
 }

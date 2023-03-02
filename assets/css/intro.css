@@ -1,4 +1,5 @@
 .intro {
+    padding-top: 6.125rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,13 +7,15 @@
 }
 
 .intro__title {
+    color: var(--azul20);
     font-size: 3.5rem;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .intro__text {
+    color: var(--azul20);
     font-size: 1.125rem;
-    margin: 38px 62px;
+    margin: 2rem 2.5rem;
 }
 
 .intro__text strong {
@@ -23,13 +26,15 @@
     display: block;
     width: 100%;
     padding: 1rem 0;
-    background: #D9D9D9;
+    background: var(--azul20);
+    color: var(--azul90);
 
 
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
 
-    border: 1px solid white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 10px;
 }
 
@@ -69,4 +74,18 @@
     .intro__button {
         width: 28rem;
     }
+
+    .intro__button:hover {
+        background: #9A9B9F;
+
+    }
+
+    .intro__button:active {
+        background: #E6E7E7;
+        box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+
+
+
 }
